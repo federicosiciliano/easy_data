@@ -1,4 +1,4 @@
-import pandas as pd
+import os
 
 from .file import *
 from .transform import one_hot_encode_data, merge_splits, split_data, scale_data
@@ -43,8 +43,8 @@ def select_dataloader(source):
 		raise NotImplementedError("DATA IMPORT NOT IMPLEMENTED FROM", loc)
 	return dataloader
 
-def get_local_data(name, loader_params = {}, **kwargs):
-	filename = "../data/" + name
+def get_local_data(name, data_folder = "../data/", loader_params = {}, **kwargs):
+	filename = os.path.join(data_folder,name)
 	ext = filename.split(".")[-1]
 	if ext=="npz": #already a dict
 		dct = load_arrays(filename, loader_params, **kwargs)
