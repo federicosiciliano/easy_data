@@ -6,7 +6,6 @@ from .uci import download_UCI
 from .torch import get_torchvision_data
 
 def load_data(source="local", split_vars = None, merge_before_split=False, one_hot_encode=True, **kwargs):
-	print(asdfljnasdkjabsdkjasnkjladsnkl)
 	dataloader = select_dataloader(source)
 
 	#using kwargs["data"] instead of data, cause data may be inside kwargs in case from=="as_param" may avoid duplication?
