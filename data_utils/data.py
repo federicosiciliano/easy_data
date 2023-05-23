@@ -57,5 +57,7 @@ def get_local_data(name, data_folder = "../data/", loader_params = {}, **kwargs)
 			app = load_csv(filename, loader_params, **kwargs)
 		elif ext=="npy":
 			app = load_numpy(filename, loader_params, **kwargs)
+		elif ext=="npz":
+			app = load_npz(filename, loader_params, **kwargs)
 		return {"x": app}
 	raise NotImplementedError

@@ -12,6 +12,11 @@ def load_numpy(filename, loader_params, **kwargs):
     arr = np.load(filename, **loader_params)
     return arr
 
+def load_npz(filename, loader_params, **kwargs):
+    arr = np.load(filename, **loader_params)
+    #arr = {key:value for key,value in app.items()}
+    return dict(arr.items())
+
 #def load_pickle
 
 def load_arrays(filename, loader_params, **kwargs):
