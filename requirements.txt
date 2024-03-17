@@ -13,3 +13,4 @@ pytorch_lightning
 
 pandas
 imageio
+scikit-learn
