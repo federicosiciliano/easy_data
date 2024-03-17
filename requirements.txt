@@ -11,5 +11,5 @@ torchmetrics
 # PyTorch Lightning: A lightweight PyTorch wrapper for organizing and simplifying deep learning code
 pytorch_lightning
 
-# Pandas
 pandas
+imageio
