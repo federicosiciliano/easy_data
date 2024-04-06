@@ -15,9 +15,9 @@ if os.path.isfile("requirements.txt"):
 
 # Define the package setup configuration
 setup(
-    name='Data Utils',  # Replace with your package name
+    name='Easy Data',  # Replace with your package name
     packages=find_packages(),  # List of all packages included in your project
-    description='Data Utils: Simplify Data Utilization',  
+    description='Easy Data: Simplify Data Utilization',  
     long_description=long_description,  # Use the contents of README.md as the long description
     long_description_content_type="text/markdown",
     version='1.0.0',  # Specify the version of your package
